@@ -20,9 +20,9 @@ public class Tree {
     {
         if (isNull(this.root))
         {
-            return True;
+            return true;
         }
-        return False;
+        return false;
 
     }
 
@@ -34,7 +34,7 @@ public class Tree {
         }
         else {
             int size = 1;
-            for (i =0; i<subtrees.length; i++)
+            for (int i =0; i<subtrees.length; i++)
             {
                 size = size+subtrees[i].count();
             }
