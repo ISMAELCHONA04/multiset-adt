@@ -14,4 +14,20 @@ public class Tree {
         subtrees = new Tree[] {};
     }
 
+
+    public int length() {
+        if (this.is_empty() == None) {
+            return 0;
+        }
+        else {
+            int size = 1;
+            for (Tree subtree : this.subtrees) {
+                size = size + subtree.length();
+            }
+            return size;
+        }
+
+    }
+
+
 }
