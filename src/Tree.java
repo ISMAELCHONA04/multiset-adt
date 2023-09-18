@@ -38,6 +38,7 @@ public class Tree {
             {
                 size = size+subtrees[i].count();
             }
+            return size;
 
         }
 
